@@ -1,20 +1,19 @@
 # KRIPTRACE
 
 `kriptrace` is a Python-based IP and domain reconnaissance tool that runs in an interactive terminal interface.  
-It gathers information such as location, ISP, organization, and ASN details for a given IP address or domain name.
-
-The tool uses the [ip-api.com](http://ip-api.com) API to fetch geolocation and network metadata.
+It gathers information such as location, ISP, organization, ASN, and live website status for a given IP address or domain name.
 
 ---
 
 ## Features
 
-- Accepts both IP addresses and domain names
-- Provides:
+- Accepts both **IP addresses** and **domain names**
+- Retrieves:
   - City, region, and country
   - ISP and organization
   - ASN (Autonomous System Number)
-- Works on Windows and Linux terminals
+- Checks whether a domain’s website is **live**
+- Compatible with **Windows** and **Linux** terminals
 
 ---
 
@@ -34,7 +33,16 @@ cd kriptrace
 pip install -r requirements.txt
 ```
 
-For Kali or system-managed Python:
+> **Kali Linux users:**  
+> If you see an error like:
+>
+> ```
+> error: externally-managed-environment
+> This environment is externally managed...
+> ```
+>
+> You are running in a restricted system-managed environment.  
+> Use a virtual environment to bypass it:
 
 ```bash
 python3 -m venv venv
@@ -49,8 +57,6 @@ pip install -r requirements.txt
 ```bash
 python kriptrace.py
 ```
-
-Follow the on-screen prompts to enter an IP address or domain.
 
 ---
 
