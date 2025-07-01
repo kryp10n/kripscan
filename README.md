@@ -1,24 +1,25 @@
 # KRIPTRACE
 
-`kriptrace` is an interactive terminal-based IP and domain reconnaissance tool, written in Python. It helps you gather geolocation, ISP, ASN, and organization data for any given IP or domain.
+`kriptrace` is a Python-based IP and domain reconnaissance tool that runs in an interactive terminal interface.  
+It gathers information such as location, ISP, organization, and ASN details for a given IP address or domain name.
+
+The tool uses the [ip-api.com](http://ip-api.com) API to fetch geolocation and network metadata.
 
 ---
 
-## Features
+## 🚀 Features
 
-- Interactive interface (no command-line flags)
-- Supports IP or domain input
-- Automatically resolves domains to IP
+- Accepts both IP addresses and domain names
+- Resolves domains to IP automatically
 - Provides:
-  - Location (city, region, country)
-  - ISP & Organization info
+  - City, region, and country
+  - ISP and organization
   - ASN (Autonomous System Number)
-- ASCII banner and color-coded output
 - Works on Windows and Linux terminals
 
 ---
 
-## Preview
+## 🖼️ Preview
 
 Linux terminal example:
 
@@ -26,7 +27,7 @@ Linux terminal example:
 
 ---
 
-## Installation
+## 🧑‍💻 Installation
 
 ```bash
 git clone https://github.com/kryp10n/kriptrace.git
@@ -34,7 +35,7 @@ cd kriptrace
 pip install -r requirements.txt
 ```
 
-If you're on Kali or a managed Python environment:
+For Kali or system-managed Python:
 
 ```bash
 python3 -m venv venv
@@ -44,34 +45,22 @@ pip install -r requirements.txt
 
 ---
 
-## Usage
+## 💡 Usage
 
 ```bash
 python kriptrace.py
 ```
 
----
-
-## Dependencies
-
-- `requests`
-- `pyfiglet`
-- `colorama`
-
-Install them via:
-
-```bash
-pip install -r requirements.txt
-```
+Follow the on-screen prompts to enter an IP address or domain.
 
 ---
 
-## License
+## 📜 License
 
 This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-## Author
+## 👤 Author
 
-Made with love by **[kryp10n](https://github.com/kryp10n)**.
+Developed by [kryp10n](https://github.com/kryp10n)
