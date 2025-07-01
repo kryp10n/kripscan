@@ -7,8 +7,6 @@ The tool uses the [ip-api.com](http://ip-api.com) API to fetch geolocation and n
 
 ![kriptrace](screenshots/linux-demo.png)
 
----
-
 ## Features
 
 - Accepts both **IP addresses** and **domain names**
@@ -18,8 +16,6 @@ The tool uses the [ip-api.com](http://ip-api.com) API to fetch geolocation and n
   - ASN (Autonomous System Number)
 - Checks whether a domain’s website is **live**
 - Compatible with **Windows** and **Linux** terminals
-
----
 
 ## Installation
 
@@ -46,8 +42,6 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
----
-
 ## Usage
 
 ```bash
@@ -56,13 +50,9 @@ python kriptrace.py
 
 Follow the on-screen prompts and enter either an IP or domain name.
 
----
-
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-
----
 
 ## Author
 
