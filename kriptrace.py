@@ -6,7 +6,7 @@ import socket
 init(autoreset=True)
 
 def print_banner():
-    banner = pyfiglet.figlet_format("KRIPTRACE", font="doom")
+    banner = pyfiglet.figlet_format("KRIPTRACE", font="big")
     print(Fore.RED + Style.BRIGHT + banner)
     print(Style.BRIGHT + Fore.WHITE + "      kriptrace[v1] by kryp10n\n")
 
