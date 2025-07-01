@@ -3,9 +3,9 @@
 `kriptrace` is a Python-based IP and domain reconnaissance tool that runs in an interactive terminal interface.  
 It gathers information such as location, ISP, organization, ASN, and live website status for a given IP address or domain name.
 
-![kriptrace](screenshots/linux-demo.png)
+The tool uses the [ip-api.com](http://ip-api.com) API to fetch geolocation and network metadata.
 
-The tool uses the [ipinfo.io](https://ipinfo.io) API to fetch geolocation and network metadata.
+![kriptrace](screenshots/linux-demo.png)
 
 ---
 
@@ -54,8 +54,7 @@ pip install -r requirements.txt
 python kriptrace.py
 ```
 
-Follow the on-screen prompt and enter either an IP or domain name.
-![kriptrace-options](screenshots/linux-demo.png)
+Follow the on-screen prompts and enter either an IP or domain name.
 
 ---
 

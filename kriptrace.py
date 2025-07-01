@@ -31,14 +31,18 @@ def resolve_domain(domain):
 
 def get_ip_info(ip):
     try:
-        response = requests.get(f"https://ipinfo.io/{ip}/json")
+        response = requests.get(f"http://ip-api.com/json/{ip}?fields=status,message,query,country,regionName,city,isp,org,as")
         data = response.json()
 
-        print(Fore.CYAN + f"IP: {data.get('ip', 'N/A')}")
-        print(f"Location: {data.get('city', 'N/A')}, {data.get('region', 'N/A')}, {data.get('country', 'N/A')}")
-        print(f"ISP: {data.get('org', 'N/A').split(' ', 1)[-1]}")
+        if data.get("status") != "success":
+            print(Fore.RED + f"[!] API error: {data.get('message', 'Unknown error')}")
+            return
+
+        print(Fore.CYAN + f"IP: {data.get('query', 'N/A')}")
+        print(f"Location: {data.get('city', 'N/A')}, {data.get('regionName', 'N/A')}, {data.get('country', 'N/A')}")
+        print(f"ISP: {data.get('isp', 'N/A')}")
         print(f"Org: {data.get('org', 'N/A')}")
-        print(f"ASN: {data.get('asn', {}).get('asn', 'N/A')} {data.get('asn', {}).get('name', '')}")
+        print(f"ASN: {data.get('as', 'N/A')}")
     except Exception:
         print(Fore.RED + "[!] Failed to retrieve IP information.")
 
@@ -55,7 +59,7 @@ def is_site_live(domain):
         except Exception:
             continue
     print(Fore.RED + "[!] Website status: Not reachable or parked")
-    
+
 def main():
     print_banner()
     choice = prompt_choice()
