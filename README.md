@@ -1,57 +1,88 @@
 # KRIPTRACE
 
-kriptrace is a lightweight command-line tool that lets you trace and gather intel on IP addresses and domains.  
-Built by [kryp10n](https://github.com/kryp10n) for cybersecurity and network forensics workflows.
+`kriptrace` is an interactive terminal-based IP and domain reconnaissance tool, written in Python.  
+It helps you gather geolocation, ISP, ASN, and organization data for any given IP or domain — with a clean terminal UI, ASCII art, and color prompts.
 
 ---
 
-## 🔧 Features
-- IP geolocation (country, city, region)
-- ISP, ASN, and organization info
-- JSON/raw mode with --json flag
-- Clean CLI with argument support
+## 🚀 Features
+
+- Interactive interface (no command-line flags)
+- Supports IP or domain input
+- Automatically resolves domains to IP
+- Provides:
+  - Location (city, region, country)
+  - ISP & Organization info
+  - ASN (Autonomous System Number)
+- ASCII banner and color-coded output
+- Works on Windows and Linux terminals
 
 ---
 
-## 🛠️ Installation
+## 🖼️ Preview
 
+Linux terminal example:
+
+![kriptrace demo](screenshots/linux-demo.png)
+
+---
+
+## 🧑‍💻 Installation
+
+```bash
 git clone https://github.com/kryp10n/kriptrace.git
 cd kriptrace
 pip install -r requirements.txt
+```
+
+If you're on Kali or a managed Python environment:
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
 
 ---
 
-## 🚀 Usage
+## 💡 Usage
 
-Basic IP trace:
-python3 kriptrace.py -i 8.8.8.8
+```bash
+python kriptrace.py
+```
 
-Output in JSON format:
-python3 kriptrace.py -i 1.1.1.1 --json
+You'll see a banner and interactive prompts:
+
+```
+Choose input type:
+[1] IP Address
+[2] URL / Domain
+```
+
+Enter your target and view the results.
 
 ---
 
-## 🧾 Arguments
+## 📦 Dependencies
 
-Flag           | Description                                     | Required
----------------|-------------------------------------------------|---------
--i, --ip       | Target IP address or domain to trace            | Yes
---json         | Output raw JSON instead of formatted output     | No
+- `requests`
+- `pyfiglet`
+- `colorama`
+
+Install them via:
+
+```bash
+pip install -r requirements.txt
+```
 
 ---
 
-## 🔮 Planned Features
+## 📜 License
 
-- --save to write output to a file
-- Colored terminal output with colorama
-- Domain resolution (e.g., kriptrace -i google.com)
-- Threat score integration (AbuseIPDB, VirusTotal)
-- Optional banner / ASCII intro
+This project is licensed under the [MIT License](LICENSE).
 
 ---
 
 ## 👤 Author
 
-Built with intent and curiosity by [kryp10n](https://github.com/kryp10n)  
-License: MIT
-
+Made with terminal love by **[kryp10n](https://github.com/kryp10n)**.
