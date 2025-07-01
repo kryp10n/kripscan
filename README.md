@@ -5,7 +5,7 @@ It helps you gather geolocation, ISP, ASN, and organization data for any given I
 
 ---
 
-## 🚀 Features
+## Features
 
 - Interactive interface (no command-line flags)
 - Supports IP or domain input
@@ -19,7 +19,7 @@ It helps you gather geolocation, ISP, ASN, and organization data for any given I
 
 ---
 
-## 🖼️ Preview
+## Preview
 
 Linux terminal example:
 
@@ -27,7 +27,7 @@ Linux terminal example:
 
 ---
 
-## 🧑‍💻 Installation
+## Installation
 
 ```bash
 git clone https://github.com/kryp10n/kriptrace.git
@@ -45,7 +45,7 @@ pip install -r requirements.txt
 
 ---
 
-## 💡 Usage
+## Usage
 
 ```bash
 python kriptrace.py
@@ -63,7 +63,7 @@ Enter your target and view the results.
 
 ---
 
-## 📦 Dependencies
+## Dependencies
 
 - `requests`
 - `pyfiglet`
@@ -77,12 +77,12 @@ pip install -r requirements.txt
 
 ---
 
-## 📜 License
+## License
 
 This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-## 👤 Author
+## Author
 
-Made with terminal love by **[kryp10n](https://github.com/kryp10n)**.
+Made with love by **[kryp10n](https://github.com/kryp10n)**.
