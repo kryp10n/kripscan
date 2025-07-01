@@ -7,7 +7,7 @@ The tool uses the [ip-api.com](http://ip-api.com) API to fetch geolocation and n
 
 ---
 
-## 🚀 Features
+## Features
 
 - Accepts both IP addresses and domain names
 - Resolves domains to IP automatically
@@ -19,7 +19,7 @@ The tool uses the [ip-api.com](http://ip-api.com) API to fetch geolocation and n
 
 ---
 
-## 🖼️ Preview
+## Preview
 
 Linux terminal example:
 
@@ -27,7 +27,7 @@ Linux terminal example:
 
 ---
 
-## 🧑‍💻 Installation
+## Installation
 
 ```bash
 git clone https://github.com/kryp10n/kriptrace.git
@@ -45,7 +45,7 @@ pip install -r requirements.txt
 
 ---
 
-## 💡 Usage
+## Usage
 
 ```bash
 python kriptrace.py
@@ -55,12 +55,12 @@ Follow the on-screen prompts to enter an IP address or domain.
 
 ---
 
-## 📜 License
+## License
 
 This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-## 👤 Author
+## Author
 
 Developed by [kryp10n](https://github.com/kryp10n)
