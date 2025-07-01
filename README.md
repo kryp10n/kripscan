@@ -55,6 +55,7 @@ python kriptrace.py
 ```
 
 Follow the on-screen prompt and enter either an IP or domain name.
+![kriptrace-options](screenshots/linux-demo.png)
 
 ---
 
