@@ -50,16 +50,6 @@ pip install -r requirements.txt
 python kriptrace.py
 ```
 
-You'll see a banner and interactive prompts:
-
-```
-Choose input type:
-[1] IP Address
-[2] URL / Domain
-```
-
-Enter your target and view the results.
-
 ---
 
 ## Dependencies
