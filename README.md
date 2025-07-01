@@ -1,7 +1,6 @@
 # KRIPTRACE
 
-`kriptrace` is an interactive terminal-based IP and domain reconnaissance tool, written in Python.  
-It helps you gather geolocation, ISP, ASN, and organization data for any given IP or domain — with a clean terminal UI, ASCII art, and color prompts.
+`kriptrace` is an interactive terminal-based IP and domain reconnaissance tool, written in Python. It helps you gather geolocation, ISP, ASN, and organization data for any given IP or domain.
 
 ---
 
