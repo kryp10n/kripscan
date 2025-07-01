@@ -10,7 +10,6 @@ The tool uses the [ip-api.com](http://ip-api.com) API to fetch geolocation and n
 ## Features
 
 - Accepts both IP addresses and domain names
-- Resolves domains to IP automatically
 - Provides:
   - City, region, and country
   - ISP and organization
@@ -63,4 +62,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Author
 
-Developed by [kryp10n](https://github.com/kryp10n)
+Made by [kryp10n](https://github.com/kryp10n)
