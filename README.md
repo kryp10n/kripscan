@@ -1,57 +1,65 @@
 # KRIPTRACE
 
-kriptrace is a lightweight command-line tool that lets you trace and gather intel on IP addresses and domains.  
-Built by [kryp10n](https://github.com/kryp10n) for cybersecurity and network forensics workflows.
+`kriptrace` is a Python-based IP and domain reconnaissance tool that runs in an interactive terminal interface.  
+It gathers information such as location, ISP, organization, and ASN details for a given IP address or domain name.
+
+The tool uses the [ip-api.com](http://ip-api.com) API to fetch geolocation and network metadata.
 
 ---
 
-## 🔧 Features
-- IP geolocation (country, city, region)
-- ISP, ASN, and organization info
-- JSON/raw mode with --json flag
-- Clean CLI with argument support
+## Features
+
+- Accepts both IP addresses and domain names
+- Provides:
+  - City, region, and country
+  - ISP and organization
+  - ASN (Autonomous System Number)
+- Works on Windows and Linux terminals
 
 ---
 
-## 🛠️ Installation
+## Preview
 
+Linux terminal example:
+
+![kriptrace demo](screenshots/linux-demo.png)
+
+---
+
+## Installation
+
+```bash
 git clone https://github.com/kryp10n/kriptrace.git
 cd kriptrace
 pip install -r requirements.txt
+```
+
+For Kali or system-managed Python:
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
 
 ---
 
-## 🚀 Usage
+## Usage
 
-Basic IP trace:
-python3 kriptrace.py -i 8.8.8.8
+```bash
+python kriptrace.py
+```
 
-Output in JSON format:
-python3 kriptrace.py -i 1.1.1.1 --json
-
----
-
-## 🧾 Arguments
-
-Flag           | Description                                     | Required
----------------|-------------------------------------------------|---------
--i, --ip       | Target IP address or domain to trace            | Yes
---json         | Output raw JSON instead of formatted output     | No
+Follow the on-screen prompts to enter an IP address or domain.
 
 ---
 
-## 🔮 Planned Features
+## License
 
-- --save to write output to a file
-- Colored terminal output with colorama
-- Domain resolution (e.g., kriptrace -i google.com)
-- Threat score integration (AbuseIPDB, VirusTotal)
-- Optional banner / ASCII intro
+This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-## 👤 Author
+## Author
 
-Built with intent and curiosity by [kryp10n](https://github.com/kryp10n)  
-License: MIT
-
+Made by [kryp10n](https://github.com/kryp10n)
